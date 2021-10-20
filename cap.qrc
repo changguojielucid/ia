@@ -1,0 +1,56 @@
+<RCC>
+    <qresource prefix="/cap">
+        <file>toolPixMaps/TargetCreate.png</file>
+        <file>toolPixMaps/ToggleSagittal.png</file>
+        <file>toolPixMaps/MaxCalc.png</file>
+        <file>toolPixMaps/MaxLRNC.png</file>
+        <file>toolPixMaps/Measure.png</file>
+        <file>toolPixMaps/MaxMATX.png</file>
+        <file>toolPixMaps/Annotate.png</file>
+        <file>toolPixMaps/ToggleWall.png</file>
+        <file>toolPixMaps/MaxRR.png</file>
+        <file>toolPixMaps/ToggleLumen.png</file>
+        <file>toolPixMaps/MaxStenosis.png</file>
+        <file>toolPixMaps/MaxWT.png</file>
+        <file>toolPixMaps/MaxDilation.png</file>
+        <file>toolPixMaps/MaxIPH.png</file>
+        <file>toolPixMaps/OptimizeSubvolume.png</file>
+        <file>toolPixMaps/VolumeRender.png</file>
+        <file>toolPixMaps/CenterAtCursor.png</file>
+        <file>toolPixMaps/MaxThr.png</file>
+        <file>toolPixMaps/MaxUlc.png</file>
+        <file>toolPixMaps/MoveDistal.png</file>
+        <file>toolPixMaps/RestoreViewSettings.png</file>
+        <file>toolPixMaps/SaveToReport.png</file>
+        <file>toolPixMaps/SaveViewSettings.png</file>
+        <file>toolPixMaps/ShapeIntensity.png</file>
+        <file>toolPixMaps/TargetDelete.png</file>
+        <file>toolPixMaps/TargetModify.png</file>
+        <file>toolPixMaps/TargetPathSwitch.png</file>
+        <file>toolPixMaps/ToggleAxial.png</file>
+        <file>toolPixMaps/ToggleColorBar.png</file>
+        <file>toolPixMaps/ToggleCorner.png</file>
+        <file>toolPixMaps/ToggleCoronal.png</file>
+        <file>toolPixMaps/ToggleOblique.png</file>
+        <file>toolPixMaps/ShowAsMovie.png</file>
+        <file>toolPixMaps/MoveProximal.png</file>
+        <file>toolPixMaps/EndPointCollection.png</file>
+        <file>CAP license.html</file>
+        <file>ElucidLogotransp-for-dark.icns</file>
+        <file>ElucidLogotransp-for-dark.ico</file>
+        <file>screenPixMaps/ElucidLogotransp-for-dark.png</file>
+        <file>VascuCap_D1.icns</file>
+        <file>VascuCap_D1.ico</file>
+        <file>LungCap_D1.icns</file>
+        <file>LungCap_D1.ico</file>
+        <file>screenPixMaps/lungCAPtransp-for-dark.png</file>
+        <file>screenPixMaps/ElucidVivoLogotransp-for-dark.png</file>
+        <file>screenPixMaps/analyze.png</file>
+        <file>screenPixMaps/define.png</file>
+        <file>splash screen 2021.png</file>
+        <file>screenPixMaps/survey.png</file>
+        <file>screenPixMaps/heartCAPtransp-for-dark.png</file>
+        <file>screenPixMaps/kidneyCAPtransp-for-dark.png</file>
+        <file>screenPixMaps/liverCAPtransp-for-dark.png</file>
+    </qresource>
+</RCC>
