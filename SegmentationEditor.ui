@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SegmentationEditor</class>
+ <widget class="QDialog" name="SegmentationEditor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>281</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>281</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>281</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Segmentation Editor</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="1">
+    <layout class="QVBoxLayout" name="verticalLayout_9">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="toolsTab">
+        <attribute name="title">
+         <string>Tools</string>
+        </attribute>
+        <widget class="QWidget" name="gridLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>249</width>
+           <height>341</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="toolGridLayout">
+          <item row="3" column="0">
+           <widget class="QLabel" name="adjustEdgeLabel">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Adjust Edge</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="paintBrushButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Paint Brush</string>
+            </property>
+            <property name="text">
+             <string>Paint Brush</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="cullButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Cull</string>
+            </property>
+            <property name="text">
+             <string>Cull</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="imageFillButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Image Fill</string>
+            </property>
+            <property name="text">
+             <string>Image Fill</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QPushButton" name="smoothEdgeButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Adjust Edge</string>
+            </property>
+            <property name="text">
+             <string>Smooth Edge</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="segmentationFillButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Region Fill</string>
+            </property>
+            <property name="text">
+             <string>Seg Fill</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="sharpenEdgeButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Sharpen Edge</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0">
+           <widget class="QPushButton" name="findEdgeButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Find Edge</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="1">
+           <widget class="QPushButton" name="drawEdgeButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string>Draw Edge</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="addRemoveLabel">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Add/Remove</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::RichText</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>360</y>
+           <width>147</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="undoRedoLayout">
+          <item>
+           <widget class="QPushButton" name="undoButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Undo</string>
+            </property>
+            <property name="text">
+             <string>Undo</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="redoButton">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="toolTip">
+             <string>Redo</string>
+            </property>
+            <property name="text">
+             <string>Redo</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="parametersTab">
+        <attribute name="title">
+         <string>Parameters</string>
+        </attribute>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="3" column="0">
+          <widget class="QLabel" name="imageFillIntensityRangeLabel">
+           <property name="text">
+            <string>    intensity range</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="sharpenEdgeIterationsLineEdit"/>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="sharpenEdgeRadiusCutoffLabel">
+           <property name="text">
+            <string>    rad. curv. cutoff</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="QLabel" name="findEdgeGradientSigmaLabel">
+           <property name="text">
+            <string>    gradient sigma</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QLineEdit" name="findEdgeIterationsLineEdit"/>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="smoothEdgeIterationsLabel">
+           <property name="text">
+            <string>    iterations</string>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="QLabel" name="drawEdgeIterationsLabel">
+           <property name="text">
+            <string>    iterations</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="imageFillIntensityWindowLineEdit"/>
+         </item>
+         <item row="12" column="1">
+          <widget class="QLineEdit" name="findEdgeContrastLineEdit"/>
+         </item>
+         <item row="13" column="1">
+          <widget class="QLineEdit" name="findEdgeSmoothingWeightLineEdit"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="imageFillIntensityWindowLabel">
+           <property name="text">
+            <string>    intensity window</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="findEdgeIterationsLabel">
+           <property name="text">
+            <string>    iterations</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="sharpenEdgeRadiusCutoffLineEdit"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="imageFillEdgeSoftnessLineEdit"/>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="findEdgeParametersLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Find Edge</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="sharpenEdgeParametersLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Sharpen Edge</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="smoothEdgeParametersLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Smooth Edge</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="imageFillParametersLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Image Fill</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="QLabel" name="findEdgeSmoothingWeightLabel">
+           <property name="text">
+            <string>    smoothing weight</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="imageFillEdgeSoftnessLabel">
+           <property name="text">
+            <string>    edge softness</string>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="QLineEdit" name="findEdgeGradientSigmaLineEdit"/>
+         </item>
+         <item row="12" column="0">
+          <widget class="QLabel" name="findEdgeContrastLabel">
+           <property name="text">
+            <string>    contrast</string>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="QLabel" name="drawEdgeParameterLabel">
+           <property name="font">
+            <font>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>Draw Edge</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="sharpenEdgeIterationsLabel">
+           <property name="text">
+            <string>    iterations</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="smoothEdgeIterationsLineEdit"/>
+         </item>
+         <item row="16" column="0">
+          <widget class="QLabel" name="drawEdgeSmoothingWeightLabel">
+           <property name="text">
+            <string>    smoothing weight</string>
+           </property>
+          </widget>
+         </item>
+         <item row="16" column="1">
+          <widget class="QLineEdit" name="drawEdgeSmoothingWeightLineEdit"/>
+         </item>
+         <item row="15" column="1">
+          <widget class="QLineEdit" name="drawEdgeIterationsLineEdit"/>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="imageFillIntensityRangeComboBox">
+           <item>
+            <property name="text">
+             <string>Middle</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Bright</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dark</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="helpTab">
+        <attribute name="title">
+         <string>Help</string>
+        </attribute>
+        <widget class="QTextEdit" name="helpTextEdit">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>1</y>
+           <width>251</width>
+           <height>411</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.SF NS Text'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;For each segmentation editor tool, hold down the &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt key&lt;/span&gt; (also called option on Mac).&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Add/Remove Tools&lt;/span&gt; - &lt;span style=&quot; text-decoration: underline;&quot;&gt;left click&lt;/span&gt; adds, &lt;span style=&quot; text-decoration: underline;&quot;&gt;right click&lt;/span&gt; removes&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Paint Brush&lt;/span&gt; - paint in/out regions by dragging a 3D sphere across a plane or surface.&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/span&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;add&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt left button&lt;/span&gt; to paint in areas&lt;br /&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;remove&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt right button&lt;/span&gt; to erase areas&lt;br /&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;radius&lt;/span&gt;: &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt scroll wheel&lt;/span&gt; to change paint brush sphere radius&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cull&lt;/span&gt; - draw a planar contour that is projected in 3D to define a region that is kept or cut.&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/span&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;keep&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt left button&lt;/span&gt; to define projected region to keep&lt;br /&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;discard&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt right button&lt;/span&gt; to define discard region to discard&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Image Fill&lt;/span&gt; - 3D flood fill of image based on pixel intensities starting from the first click.&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/span&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;add&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt left button&lt;/span&gt; down to increase image fill region to be added&lt;br /&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;remove&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt right button&lt;/span&gt; down to increase image fill region to be removed&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;intensity window&lt;/span&gt; defines how wide an intensity range around the clicked point's intensity to accept&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;edge softness&lt;/span&gt; lessens the abruptness of stopping the flood filling when an edge is reached&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;intensity range&lt;/span&gt; determines whether bright/middle/dark intensity range objects are filled&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Segmentation Fill&lt;/span&gt; - 3D flood fill of a region defined by current segmentation boundary.&lt;span style=&quot; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/span&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;add&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt left button&lt;/span&gt; down to increase segmentation fill region to be added&lt;br /&gt;- &lt;span style=&quot; font-weight:600;&quot;&gt;remove&lt;/span&gt;: drag &lt;span style=&quot; text-decoration: underline;&quot;&gt;alt right button&lt;/span&gt; down to increase segmentation fill region to be removed&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Adjust Edge Tools&lt;/span&gt; - &lt;span style=&quot; text-decoration: underline;&quot;&gt;left or right button&lt;/span&gt; defines a region of influence (in blue) that limits the extent of where the segmentation is edited&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Smooth Edge&lt;/span&gt; - create a smooth surface&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;iterations &lt;/span&gt;defines how much smoothing is applied&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Sharpen Edge&lt;/span&gt; - enhance creases in the surface&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;iterations &lt;/span&gt;defines how much sharpening is applied&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;radius of curvature cutoff&lt;/span&gt; (in mm) defines a maximum curvature magnitude for sharpening&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Find Edge&lt;/span&gt; - move the segmentation boundary toward detected image edges&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;iterations &lt;/span&gt;defines how far the edge can be moved&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;gradient sigma&lt;/span&gt; (in mm) defines the scale of edges to be detected&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;contrast&lt;/span&gt; (in HU) defines the expected amount of edge contrast&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;smoothing weight&lt;/span&gt; defines how much smoothing is applied during iterations &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Draw Edge&lt;/span&gt; - move the segmentation boundary toward a hand-drawn edge (doesn't have to be a closed contour).&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;iterations &lt;/span&gt;defines how far the edge can be moved&lt;br /&gt;- &lt;span style=&quot; font-style:italic;&quot;&gt;smoothing weight&lt;/span&gt; defines how much smoothing is applied during iterations &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="doneButton">
+     <property name="text">
+      <string>Done</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
