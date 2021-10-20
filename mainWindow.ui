@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>cap</class>
+  <widget class="QMainWindow" name="cap">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1280</width>
+        <height>688</height>
+      </rect>
+    </property>
+    <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+      </sizepolicy>
+    </property>
+    <property name="windowTitle">
+      <string>MainWindow</string>
+    </property>
+    <widget class="QWidget" name="centralWidget">
+      <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+          <widget class="QTabWidget" name="analyses">
+            <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>255</horstretch>
+                <verstretch>255</verstretch>
+              </sizepolicy>
+            </property>
+            <property name="tabsClosable">
+              <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="analysis">
+              <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                  <horstretch>255</horstretch>
+                  <verstretch>255</verstretch>
+                </sizepolicy>
+              </property>
+              <attribute name="title">
+                <string>error, should not appear</string>
+              </attribute>
+              <attribute name="toolTip">
+                <string>current tab tool tip</string>
+              </attribute>
+              <attribute name="whatsThis">
+                <string>current tab what's this</string>
+              </attribute>
+              <layout class="QGridLayout" name="gridLayout_2">
+                <property name="leftMargin">
+                  <number>0</number>
+                </property>
+                <property name="topMargin">
+                  <number>0</number>
+                </property>
+                <property name="rightMargin">
+                  <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                  <number>0</number>
+                </property>
+                <property name="spacing">
+                  <number>0</number>
+                </property>
+                <item row="0" column="0">
+                  <widget class="QStackedWidget" name="workItemProcess">
+                    <property name="currentIndex">
+                      <number>3</number>
+                    </property>
+                    <widget class="workItem" name="select"/>
+                    <widget class="seriesSurvey" name="survey"/>
+                    <widget class="patientAnalyze" name="analyze"/>
+                    <widget class="targetDefine" name="define"/>
+                    <widget class="patientReport" name="report"/>
+                  </widget>
+                </item>
+              </layout>
+            </widget>
+          </widget>
+        </item>
+      </layout>
+    </widget>
+    <widget class="QMenuBar" name="menubar">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1280</width>
+          <height>22</height>
+        </rect>
+      </property>
+    </widget>
+    <widget class="QStatusBar" name="statusbar"/>
+  </widget>
+  <customwidgets>
+    <customwidget>
+      <class>patientAnalyze</class>
+      <extends>QWidget</extends>
+      <header>patientAnalyze.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>patientReport</class>
+      <extends>QWidget</extends>
+      <header>patientReport.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>workItem</class>
+      <extends>QWidget</extends>
+      <header>workItem.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>targetDefine</class>
+      <extends>QWidget</extends>
+      <header>targetDefine.h</header>
+      <container>1</container>
+    </customwidget>
+    <customwidget>
+      <class>seriesSurvey</class>
+      <extends>QWidget</extends>
+      <header>seriesSurvey.h</header>
+      <container>1</container>
+    </customwidget>
+  </customwidgets>
+  <resources/>
+  <connections/>
+</ui>
